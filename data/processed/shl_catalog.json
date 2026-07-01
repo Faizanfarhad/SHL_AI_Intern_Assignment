@@ -1,0 +1,268 @@
+[
+  {
+    "name": "SHL Occupational Personality Questionnaire (OPQ)",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-occupational-personality-questionnaire-opq/",
+    "test_type": "P",
+    "description": "Our occupational personality questionnaire helps you to get accurate, bias-free assessments by matching individual working preferences to business requirements.",
+    "categories": [
+      "Personality Assessment",
+      "Assessments"
+    ],
+    "skills": [
+      "language",
+      "personality",
+      "role fit",
+      "work style"
+    ],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "OPQ",
+      "SHL",
+      "shl occupational personality questionnaire opq"
+    ],
+    "source_title": "SHL Occupational Personality Questionnaire OPQ",
+    "hero_text": "Get accurate, Insightful assessments of potential by matching individual working preferences directly to business requirements.",
+    "faq_questions": []
+  },
+  {
+    "name": "Global Skills Assessment",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/global-skills-assessment-gsa/",
+    "test_type": "B",
+    "description": "SHL's Global Skills Assessment measures 96 behavioral skills in 15 minutes. Objective data for onboarding, upskilling, reskilling, and workforce planning.",
+    "categories": [
+      "Behavioral Assessments",
+      "Assessments"
+    ],
+    "skills": [
+      "language"
+    ],
+    "job_levels": [
+      "entry"
+    ],
+    "aliases": [
+      "GSA",
+      "global skills assessment gsa"
+    ],
+    "source_title": "Global Skills Assessment | Measure 96 Workplace Skills",
+    "hero_text": "One Assessment, Every Talent Decision",
+    "faq_questions": [
+      "We already have our own competency framework. Why would we use the SHL Universal Competency Framework (UCF)?",
+      "How does this help with upskilling and reskilling?",
+      "How does skills data from hiring get used later in development or mobility?",
+      "Is there evidence the GSA predicts performance?",
+      "What does \"globally normed\" mean for my organization?"
+    ]
+  },
+  {
+    "name": "SHL Motivation Questionnaire (MQ)",
+    "url": "https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/",
+    "test_type": "P",
+    "description": "Build an engaged, high-performing workforce using our motivation questionnaire (MQ) by matching individual employee motivation to team and organizational goals.",
+    "categories": [
+      "Personality Assessment",
+      "Assessments"
+    ],
+    "skills": [
+      "language",
+      "motivation"
+    ],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "MQ",
+      "SHL",
+      "shl motivation questionnaire mq"
+    ],
+    "source_title": "Motivation Questionnaire | Motivation Assessment Test",
+    "hero_text": "Build an engaged, high-performing workforce using our motivation questionnaire (MQ) by matching individual employee motivation to team and organizational goals.",
+    "faq_questions": []
+  },
+  {
+    "name": "Situation Judgement Tests (SJT)",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/",
+    "test_type": "B",
+    "description": "Using our Situational Judgment Tests (SJT), you can measure candidates' behavioral fit to a given role by assessing their response to a specific work situation.",
+    "categories": [
+      "Behavioral Assessments",
+      "Assessments"
+    ],
+    "skills": [],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "SJT",
+      "situation judgement tests sjt"
+    ],
+    "source_title": "Situational Judgment Tests (SJT)",
+    "hero_text": "Using our Situational Judgment Tests (SJT), you can measure candidates' behavioral fit to a given role by assessing their response to a specific work situation.",
+    "faq_questions": []
+  },
+  {
+    "name": "Call Center Simulations",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/call-center-simulations/",
+    "test_type": "P",
+    "description": "SHL\u2019s Call Center Simulations and assessment tool helps you to identify agents with the critical competencies and personality in a real-life call center environment.",
+    "categories": [
+      "Skills & Simulations",
+      "Assessments"
+    ],
+    "skills": [
+      "call center",
+      "customer service",
+      "personality"
+    ],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "CCS",
+      "call center simulations"
+    ],
+    "source_title": "Virtual Call Center Simulation and Assessment Software",
+    "hero_text": "SHL\u2019s Call Center Simulations and assessment tool helps you to identify agents with the critical competencies and personality in a real-life call center environment.",
+    "faq_questions": []
+  },
+  {
+    "name": "Business Skills",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/business-skills/",
+    "test_type": "P",
+    "description": "With our computer literacy test, assess candidates' Microsoft Office proficiency, such as working with graphs and charts, creating presentations, and more.",
+    "categories": [
+      "Skills & Simulations",
+      "Assessments"
+    ],
+    "skills": [
+      "motivation",
+      "personality"
+    ],
+    "job_levels": [
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "BS",
+      "business skills"
+    ],
+    "source_title": "Business Skills Assessment Test | Computer Literacy Test",
+    "hero_text": "With our computer literacy test, assess candidates' Microsoft Office proficiency, such as working with graphs and charts, creating presentations, and more.",
+    "faq_questions": []
+  },
+  {
+    "name": "Coding Simulations",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+    "test_type": "C",
+    "description": "Shortlist 45% more candidates within half the usual hiring time with our coding skills assessment for full stack, data engineering, front-end and more roles.",
+    "categories": [
+      "Skills & Simulations",
+      "Assessments"
+    ],
+    "skills": [
+      "coding"
+    ],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "CS",
+      "coding simulations"
+    ],
+    "source_title": "Coding Simulations | Coding Skills Assessment",
+    "hero_text": "Shortlist 45% more candidates within half the usual hiring time with our coding skills assessment for full stack, data engineering, front-end and more roles.",
+    "faq_questions": []
+  },
+  {
+    "name": "Technical Skills",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/technical-skills/",
+    "test_type": "C",
+    "description": "SHL Technical Skills assessment helps you to measure knowledge of 180+ technology concepts in less than 15 minutes for Full Stack, Front-end, Data Science, DevOps, and more roles.",
+    "categories": [
+      "Skills & Simulations",
+      "Assessments"
+    ],
+    "skills": [
+      "coding",
+      "java",
+      "language",
+      "sql"
+    ],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "TS",
+      "technical skills"
+    ],
+    "source_title": "Technical Skill Assessment | Assess Technical Knowledge",
+    "hero_text": "SHL Technical Skills assessment helps you to measure knowledge of 180+ technology concepts in less than 15 minutes for Full Stack, Front-end, Data Science, DevOps, and more roles.",
+    "faq_questions": []
+  },
+  {
+    "name": "Realistic Job and Culture Previews (RJP)",
+    "url": "https://www.shl.com/products/assessments/behavioral-assessments/realistic-job-and-culture-previews-rjp/",
+    "test_type": "B",
+    "description": "With our Realistic Job Previews, candidates can self-assess their fit with the role and with your company through a set of tasks and culture-based questions.",
+    "categories": [
+      "Behavioral Assessments",
+      "Assessments"
+    ],
+    "skills": [],
+    "job_levels": [
+      "entry",
+      "mid",
+      "senior"
+    ],
+    "aliases": [
+      "RJP",
+      "realistic job and culture previews rjp"
+    ],
+    "source_title": "Realistic Job and Culture Previews (RJP)",
+    "hero_text": "With our Realistic Job Previews, candidates can self-assess their fit with the role and with your company through a set of tasks and culture-based questions.",
+    "faq_questions": []
+  },
+  {
+    "name": "SVAR",
+    "url": "https://www.shl.com/products/assessments/skills-and-simulations/language-evaluation/svar/",
+    "test_type": "C",
+    "description": "SHL SVAR is a spoken language assessment that uses AI-driven scoring to deliver fast, consistent results for hiring at scale.",
+    "categories": [
+      "Language Evaluation",
+      "Assessments",
+      "Skills & Simulations"
+    ],
+    "skills": [
+      "adaptability",
+      "analysis",
+      "communication",
+      "customer service",
+      "language"
+    ],
+    "job_levels": [
+      "entry",
+      "senior"
+    ],
+    "aliases": [
+      "SHL",
+      "SVAR",
+      "svar"
+    ],
+    "source_title": "SHL SVAR | Spoken Language Assessment for Hiring",
+    "hero_text": "Assess genuine language skills across speaking, vocabulary, grammar, listening and comprehension \u2014 giving you a reliable signal you can trust in high-volume hiring.",
+    "faq_questions": []
+  }
+]

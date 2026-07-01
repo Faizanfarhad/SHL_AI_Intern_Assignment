@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: shl-conversational-recommender
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: CATALOG_PATH
+        value: data/processed/shl_catalog.json
+      - key: MAX_RECOMMENDATIONS
+        value: "5"
+      - key: MIN_CONTEXT_SIGNALS
+        value: "2"
+      - key: SHL_AGENT_MODEL
+        value: deepseek:deepseek-v4-flash
+      - key: SHL_AGENT_BASE_URL
+        value: ""
+      - key: DEEPSEEK_API_KEY
+        sync: false

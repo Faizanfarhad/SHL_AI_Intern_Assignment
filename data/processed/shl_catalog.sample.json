@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Java 8 (New)",
+    "url": "https://www.shl.com/",
+    "test_type": "K",
+    "description": "Measures applied Java programming knowledge for software engineering roles.",
+    "categories": ["technical", "programming"],
+    "skills": ["java", "debugging", "object oriented programming", "coding"],
+    "job_levels": ["entry", "mid", "senior"],
+    "aliases": ["java 8"]
+  },
+  {
+    "name": "Core Java Entry Level",
+    "url": "https://www.shl.com/",
+    "test_type": "K",
+    "description": "Screens foundational Java knowledge for early career software roles.",
+    "categories": ["technical", "entry-level"],
+    "skills": ["java", "syntax", "collections", "object oriented programming"],
+    "job_levels": ["entry", "junior"],
+    "aliases": ["core java"]
+  },
+  {
+    "name": "OPQ32r",
+    "url": "https://www.shl.com/",
+    "test_type": "P",
+    "description": "Measures workplace personality preferences and behavioral style.",
+    "categories": ["personality", "behavior"],
+    "skills": ["teamwork", "stakeholder management", "work style"],
+    "job_levels": ["entry", "mid", "senior", "manager"],
+    "aliases": ["opq", "opq32"]
+  },
+  {
+    "name": "General Ability Screen",
+    "url": "https://www.shl.com/",
+    "test_type": "C",
+    "description": "Measures general cognitive ability for broad hiring decisions.",
+    "categories": ["cognitive", "general ability"],
+    "skills": ["problem solving", "learning agility", "reasoning"],
+    "job_levels": ["entry", "mid", "senior"],
+    "aliases": ["gsa", "gas", "general ability"]
+  },
+  {
+    "name": "Verify Interactive Numerical Reasoning",
+    "url": "https://www.shl.com/",
+    "test_type": "C",
+    "description": "Measures numerical reasoning in interactive business scenarios.",
+    "categories": ["cognitive", "numerical reasoning"],
+    "skills": ["numerical reasoning", "analysis", "data interpretation"],
+    "job_levels": ["entry", "mid", "senior"],
+    "aliases": ["vinr", "numerical reasoning"]
+  },
+  {
+    "name": "SQL Server",
+    "url": "https://www.shl.com/",
+    "test_type": "K",
+    "description": "Measures SQL knowledge for data and backend roles.",
+    "categories": ["technical", "database"],
+    "skills": ["sql", "queries", "joins", "database fundamentals"],
+    "job_levels": ["entry", "mid", "senior"],
+    "aliases": ["sql"]
+  }
+]
