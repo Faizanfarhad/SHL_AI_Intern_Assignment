@@ -54,9 +54,18 @@ Deployment checklist:
 
 1. Ensure `data/processed/shl_catalog.json` exists
 2. Ensure `.env` contains the runtime values you want in production
-3. Expose `GET /health` and `POST /chat`
-4. Confirm the platform sends traffic to the container `PORT`
-5. Submit the public base URL and the approach document
+   ```text
+   .env Should have to be contained(if it is running locally): 
+    -> APP_ENV=development #default no change needed 
+    -> CATALOG_PATH=data/processed/shl_catalog.json #default no change needed 
+    -> MAX_RECOMMENDATIONS=5 #how much it should return  top  recommendations.
+    -> MIN_CONTEXT_SIGNALS=2 #how much  informative tokens needed before recommending.here is 2+ 
+    -> SHL_AGENT_MODEL=deepseek:deepseek-v4-flash # Model Name  
+    -> DEEPSEEK_API_KEY= your_api #place your Deepseek api key or OpenAi key 
+   ```
+4. Expose `GET /health` and `POST /chat`
+5. Confirm the platform sends traffic to the container `PORT`
+6. Submit the public base URL and the approach document
 
 ### Render
 
