@@ -89,22 +89,56 @@ python scraper.py --max-pages 40
 python scraper.py --delay 0.2
 ```
 
-Health check:
+## Testing the API
+
+Once the service is running (locally or on Render), use these curl commands to verify both endpoints.
+
+### Health check (`GET /health`)
 
 ```bash
-curl http://127.0.0.1:8000/health
+curl -v https://shl-conversational-recommender-dufy.onrender.com/health 2>&1
 ```
 
-Chat request:
+| Part | What it does |
+|------|-------------|
+| `curl` | Command-line HTTP client |
+| `-v` | Verbose mode — shows TLS handshake, SSL certificates, HTTP headers, status code |
+| `https://...onrender.com/health` | Target URL. A `GET` request by default (no body needed) |
+| `2>&1` | Merges stderr into stdout so verbose output and response body appear together |
+
+Expected response: `{"status":"ok"}` with `HTTP/2 200`
+
+### Chat request (`POST /chat`)
 
 ```bash
-curl -X POST http://127.0.0.1:8000/chat \
+curl -s -X POST https://shl-conversational-recommender-dufy.onrender.com/chat \
   -H "Content-Type: application/json" \
-  -d '{
-    "messages": [
-      {"role": "user", "content": "I am hiring a mid-level Java developer who works with stakeholders"}
-    ]
-  }'
+  -d '{"messages": [{"role": "user", "content": "I need a cognitive test for a senior analyst role"}]}'
+```
+
+| Part | What it does |
+|------|-------------|
+| `curl` | Command-line HTTP client |
+| `-s` | Silent mode — hides progress bar, cleaner output |
+| `-X POST` | Uses the POST HTTP method (we are sending data) |
+| `https://...onrender.com/chat` | Target URL endpoint |
+| `-H "Content-Type: application/json"` | Tells the server the body is JSON |
+| `-d '{...}'` | The JSON payload sent in the request body |
+
+Expected response: JSON object with `reply`, `recommendations` array, and `end_of_conversation` boolean.
+
+### Local testing
+
+Replace the URL with `http://127.0.0.1:8000` when running locally:
+
+```bash
+curl -v http://127.0.0.1:8000/health 2>&1
+```
+
+```bash
+curl -s -X POST http://127.0.0.1:8000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"messages": [{"role": "user", "content": "I am hiring a mid-level Java developer who works with stakeholders"}]}'
 ```
 
 ## What is implemented
