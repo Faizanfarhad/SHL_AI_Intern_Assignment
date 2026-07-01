@@ -17,7 +17,7 @@ data/
   processed/      # Scraped catalog (shl_catalog.json) + sample catalog
 scripts/          # Catalog validation utility
 tests/            # API tests (5 tests, all passing)
-scraper.py        # BFS crawler that builds the catalog from shl.com
+scraper.py        # crawler that builds the catalog from shl.com
 Dockerfile        # Container build instructions for Render
 render.yaml       # Render Blueprint for one-click deploy
 APPROACH_DOCUMENT.md  # 2-page approach document for submission
