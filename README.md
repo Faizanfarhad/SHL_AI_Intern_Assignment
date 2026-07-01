@@ -9,14 +9,18 @@ app/
   api/            # FastAPI routes and dependencies
   core/           # Settings
   models/         # Request and response schemas
-  services/       # Catalog loading, guardrails, chat orchestration
-  prompts/        # Agent prompt for LangChain
-  utils/          # Shared text helpers
+  services/       # Catalog loading, guardrails, chat orchestration, LLM agent
+  prompts/        # Agent system prompt for LangChain
+  utils/          # Shared text normalization and tokenization helpers
 data/
-  raw/            # Place raw scraped SHL data here
-  processed/      # Normalized catalog used by the API
-scripts/          # Data preparation utilities
-tests/            # API tests
+  raw/            # Raw scraped SHL HTML pages and crawl manifest
+  processed/      # Scraped catalog (shl_catalog.json) + sample catalog
+scripts/          # Catalog validation utility
+tests/            # API tests (5 tests, all passing)
+scraper.py        # BFS crawler that builds the catalog from shl.com
+Dockerfile        # Container build instructions for Render
+render.yaml       # Render Blueprint for one-click deploy
+APPROACH_DOCUMENT.md  # 2-page approach document for submission
 ```
 
 ## Quick start
@@ -103,27 +107,26 @@ curl -X POST http://127.0.0.1:8000/chat \
   }'
 ```
 
-## What is already implemented
+## What is implemented
 
-- Exact `/health` and `/chat` API contract from the brief
+- Exact `/health` and `/chat` API contract matching the assignment spec
 - Stateless conversation handling from full message history
-- Basic scope guardrails for off-topic, legal, and prompt-injection attempts
-- Clarification behavior for vague requests
-- Sample comparison behavior for assessments in the local catalog
-- Lightweight keyword-based retrieval over the local catalog
-- Optional LangChain agent boilerplate using `create_agent` plus catalog tools
+- All four required conversational behaviors: clarify, recommend, refine, compare
+- Scope guardrails: blocks prompt-injection, legal advice, and off-topic queries
+- Catalog scraper (`scraper.py`): crawls shl.com and extracts 10 individual assessments
+- Weighted heuristic retrieval with domain-intent scoring and diversification
+- Optional LangChain agent with catalog-grounded tools (DeepSeek V4 Flash)
+- Dockerfile + render.yaml for one-click Render deployment
+- 5 automated API tests covering all core behaviors
 
-## What you should replace next
+## What remains
 
-1. Scrape the full SHL Individual Test Solutions catalog into `data/raw/`.
-2. Normalize it into the JSON shape expected by `scripts/build_catalog.py`.
-3. Improve retrieval and ranking if you need stronger matching later.
-4. Add evaluation against the provided conversation traces.
-5. Deploy the API publicly and submit `APPROACH_DOCUMENT.md`
+- Evaluation against the 10 public conversation traces (Recall@10 measurement)
+- Fine-tuning scraper test_type classification for edge cases
 
-## Sample catalog note
+## Catalog
 
-`data/processed/shl_catalog.sample.json` is only there to make the scaffold runnable. It is not a substitute for the full SHL catalog required by the assignment.
+`data/processed/shl_catalog.json` contains 10 scraped SHL assessments with real URLs. `data/processed/shl_catalog.sample.json` is a smaller hand-crafted sample for quick local development.
 
 ## LangChain note
 
